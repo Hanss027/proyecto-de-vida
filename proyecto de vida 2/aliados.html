@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliados</title>
+    <style>
+ body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1E1E2E;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #F8F9FA;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(to bottom, #4A5568, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+    margin-right: 20px;
+}
+
+header img.derecha {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+header img.logo {
+    transition: transform 0.3s ease;
+}
+
+header img.logo:hover {
+    transform: scale(1.1);
+}
+
+nav.otras ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #2c3e50, #1E1E2E);
+    text-align: center;
+}
+
+nav.otras ul li {
+    margin: 0 15px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav.otras ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+nav.otras ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav.otras ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1abc9c;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav.otras ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+nav.otras ul li a:hover {
+    color: white;
+    background-color: #1abc9c;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.aliados {
+    background-color: #2c3e50;
+    border: 2px solid #1abc9c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(50% - 20px); 
+    box-sizing: border-box;
+    font-size: 1.2em; 
+    position: relative; 
+    overflow: hidden; 
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 0.5s ease forwards; 
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.aliados:nth-child(odd) {
+    animation-delay: 0.2s; 
+}
+
+.aliados:nth-child(even) {
+    animation-delay: 0.4s; 
+}
+
+.aliados::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.aliados:hover::before {
+    opacity: 1;
+}
+
+.aliados h2 {
+    font-size: 1.5em; 
+    color: #1abc9c; 
+    text-align: center;
+    position: relative; 
+    z-index: 2; 
+}
+
+.aliados ul, .aliados li {
+    font-size: 1.2em; 
+    position: relative; 
+    z-index: 2; 
+}
+
+.aliados:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3em; 
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="LCM.png" alt="logo" class="logo">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
+            <h1>Liceo Compu-Market</h1>
+        </div>
+        <nav class="otras">
+            <ul>
+                <li><a href="index.html">Página principal</a></li>
+                <li><a href="autorretrato.html">Autorretrato y acróstico</a></li>
+                <li><a href="bio.html">Biografía</a></li>
+                <li><a href="vision y mision.html">Visión y misión</a></li>
+                <li><a href="metas.html">Metas</a></li>
+                <li><a href="valores.html">Valores</a></li>
+                <li><a href="estrategias.html">Estrategias</a></li>
+                <li><a href="foda.html">FODA</a></li>
+                <li><a href="conclusion.html">Conclusión y agradecimientos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <center><h1>Aliados</h1></center>
+
+    <div class="container">
+    <div class="aliados">
+        <h2>Acádemico</h2>
+        <ul>
+            <li>Mis maestros</li>
+            <li>Mis compañeros</li>
+        </ul>
+    </div>
+    
+    <div class="aliados">
+        <h2>Espiritual</h2>
+        <ul>
+            <li>Dios</li>
+        </ul>
+    </div>
+
+    <div class="aliados">
+        <h2>Económico</h2>
+        <ul>
+            <li>Mis papás</li>
+            <li>Mi tía Astrid</li>
+        </ul>
+    </div>
+
+    <div class="aliados">
+        <h2>Familiar</h2>
+        <ul>
+            <li>Mi papá</li>
+            <li>Mi mamá</li>
+            <li>Mi hermano</li>
+            <li>Mis tias</li>
+        </ul>
+    </div>
+
+    <div class="aliados">
+        <h2>Emocional</h2>
+        <ul>
+            <li>Mis papás</li>
+            <li>Mi hermano</li>
+            <li>Mi novia</li>
+            <li>Mis mascotas</li>
+        </ul>
+    </div>
+
+    <div class="aliados">
+        <h2>Social</h2>
+        <ul>
+            <li>Justin</li>
+            <li>Dwight</li>
+            <li>Romeo</li>
+            <li>Ángel</li>
+            <li>Jostin</li>
+            <li>Horacio</li>
+        </ul>
+    </div>
+    <div class="aliados">
+        <h2>Fisico</h2>
+        <ul>
+            <li>Romeo</li>
+            <li>El que me corrige cuando estoy haciendo una mala técnica (No le he preguntado su nombre)</li>
+            <li>Ángel</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
